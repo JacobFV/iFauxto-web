@@ -73,15 +73,38 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Phone mockup placeholder */}
-        <div className="relative mt-16 max-w-sm mx-auto">
-          <div className="aspect-[9/19] bg-gradient-to-br from-gray-800 to-gray-900 rounded-[3rem] border-4 border-gray-700 shadow-2xl overflow-hidden">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-6 bg-black rounded-b-2xl" />
-            <div className="h-full w-full bg-gradient-to-br from-purple-900/50 to-pink-900/50 flex items-center justify-center">
-              <div className="text-center px-8">
-                <div className="text-6xl mb-4">📸</div>
-                <p className="text-gray-400 text-sm">App Preview Coming Soon</p>
-              </div>
+        {/* Phone mockups with real screenshots */}
+        <div className="relative mt-16 flex items-center justify-center gap-8">
+          {/* Left phone - Getting Setup */}
+          <div className="hidden md:block relative -rotate-6 translate-y-8">
+            <div className="w-[240px] aspect-[9/19.5] bg-black rounded-[2.5rem] border-4 border-gray-700 shadow-2xl overflow-hidden">
+              <img
+                src="/getting-setup.png"
+                alt="iFauxto permission request"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Center phone - Main App */}
+          <div className="relative z-10">
+            <div className="w-[280px] md:w-[320px] aspect-[9/19.5] bg-black rounded-[3rem] border-4 border-gray-700 shadow-2xl overflow-hidden">
+              <img
+                src="/app.png"
+                alt="iFauxto main interface"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Right phone - Getting Setup (mirrored for balance) */}
+          <div className="hidden md:block relative rotate-6 translate-y-8">
+            <div className="w-[240px] aspect-[9/19.5] bg-black rounded-[2.5rem] border-4 border-gray-700 shadow-2xl overflow-hidden">
+              <img
+                src="/getting-setup.png"
+                alt="iFauxto permission request"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
